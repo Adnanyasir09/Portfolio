@@ -26,7 +26,7 @@ const Home = () => (
         <a href="https://github.com/adnanyasir" target="_blank" className="text-gray-800 hover:text-black transition transform hover:scale-110">
           <FaGithub />
         </a>
-        <a href="https://linkedin.com/in/adnanyasir" target="_blank" className="text-blue-600 hover:text-blue-800 transition transform hover:scale-110">
+        <a href="https://www.linkedin.com/in/adnan-yasir-582691257/" target="_blank" className="text-blue-600 hover:text-blue-800 transition transform hover:scale-110">
           <FaLinkedin />
         </a>
         <a href="https://twitter.com/adnanyasir" target="_blank" className="text-blue-400 hover:text-blue-600 transition transform hover:scale-110">
