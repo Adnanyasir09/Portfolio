@@ -41,6 +41,20 @@ const Achievements = () => {
               />
             </div>
           </li>
+          {/* Photography Competition Achievement */}
+          <li className="bg-white shadow-lg rounded-lg p-6 max-w-lg text-center">
+            <p className="text-lg text-gray-700">
+              <strong>📸 Runner-up</strong> in a <strong>Photography Competition</strong>
+            </p>
+            {/* Certificate Image */}
+            <div className="mt-4">
+              <img 
+                src="cert3.jpg"  // Update this with the actual image filename
+                alt="Photography Competition Certificate" 
+                className="w-full max-w-md rounded-lg shadow-md"
+              />
+            </div>
+          </li>
         </ul>
       </section>
     );

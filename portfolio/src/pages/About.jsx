@@ -74,6 +74,31 @@ const About = () => {
             <li>Exploring New Technologies & AI</li>
           </ul>
         </motion.div>
+       
+       {/* Meme Section */}
+<div className="mt-10 w-full max-w-4xl text-left">
+    <h2 className="text-2xl font-semibold text-white text-center">😂 My Meme Collection</h2>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+        {/* Meme 1 */}
+        <div className="relative group">
+            <img src="m1.jpg" alt="Meme 1" className="w-full h-48 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300" />
+            <a href="m1.jpg" download className="absolute bottom-2 right-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded-md text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Download
+            </a>
+        </div>
+
+        {/* Meme 2 */}
+        <div className="relative group">
+            <img src="m2.jpeg" alt="Meme 2" className="w-full h-48 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300" />
+            <a href="m2.jpeg" download className="absolute bottom-2 right-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded-md text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Download
+            </a>
+        </div>
+    </div>
+</div>
+
+
 
       </div>
     </section>
