@@ -18,21 +18,39 @@ const About = () => {
 
       {/* Bio Section */}
       <motion.div
-        className="relative z-10 max-w-3xl text-lg bg-white/10 backdrop-blur-lg shadow-xl p-6 rounded-2xl border border-white/20 hover:scale-105 transition-all duration-300"
+        className="relative z-10 max-w-4xl text-lg bg-white/10 backdrop-blur-lg shadow-xl p-6 rounded-2xl border border-white/20 hover:scale-105 transition-all duration-300"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
       >
+        <p className="mb-4">
+          Hello, my name is <strong>Adnan Yasir</strong>. I’m a Final-Year Computer Science
+          Engineering student pursuing BTech from KIET Group of Institutions, Ghaziabad.
+          I completed my Class 12 from St Paul's Inter College, Shahjahanpur, scoring
+          <strong> 80.2%</strong>.
+        </p>
+        <p className="mb-4">
+          I’m skilled in <strong>C, C++, Java, Python, HTML, CSS, JavaScript</strong> and have
+          hands-on experience with <strong>React JS, Node JS, MongoDB</strong>.
+          I’ve worked on multiple full-Stack projects — one of the most significant being
+          <em> MatchMarry where you can find and connect with your future life partner</em>.
+          Alongside, I’ve built a real-time MERN chat application, a mini shopping site, a
+          currency converter and more.
+        </p>
+        <p className="mb-4">
+          Outside academics, I’ve won multiple competitions and cash prizes in aptitude, 
+          photography and several other competitions. I’m also a proud member of Innogeeks Coding Club, 
+          the Fashion Society.
+        </p>
         <p>
-          Hi, I am <strong>Adnan Yasir</strong>, a passionate Full-Stack Developer skilled in the 
-          <strong> MERN Stack</strong> and C++. I enjoy solving complex problems, designing 
-          efficient algorithms, and building scalable web applications.  
-          Currently pursuing my <strong>BTech in Computer Science</strong> at 
-          <strong> KIET Group of Institutions</strong>.
+          These diverse experiences have shaped me into a better communicator, adaptable team player, 
+          and someone who is ready to bring creativity and technical skill into my next opportunity.
         </p>
       </motion.div>
 
-      {/* Three Columns - Education | Strengths | Hobbies & Interests */}
+   
+
+      {/* Three Columns - Education | Strengths | Hobbies */}
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
         
         {/* Education */}
@@ -54,15 +72,15 @@ const About = () => {
         >
           <h2 className="text-2xl font-semibold">💪 Strengths</h2>
           <ul className="mt-2 list-disc pl-5 text-white/80">
-            <li>Strong problem-solving & DSA skills</li>
-            <li>Full-Stack MERN Development</li>
-            <li>Team collaboration & project management</li>
-            <li>Debugging & analytical skills</li>
-            <li>Passion for AI & tech innovations</li>
+            <li>Strong decision-making</li>
+            <li>Quick learning & adaptability</li>
+            <li>Full commitment to goals</li>
+            <li>Strategic planning</li>
+            <li>Self-reliance</li>
           </ul>
         </motion.div>
 
-        {/* Hobbies & Interests */}
+        {/* Hobbies */}
         <motion.div
           className="p-6 bg-white/10 backdrop-blur-lg shadow-lg rounded-xl border border-white/20 hover:scale-105 transition-all duration-300"
           whileHover={{ scale: 1.05 }}
@@ -70,36 +88,10 @@ const About = () => {
           <h2 className="text-2xl font-semibold">🎨 Hobbies & Interests</h2>
           <ul className="mt-2 list-disc pl-5 text-white/80">
             <li>Coding & Competitive Programming</li>
-            <li>Video Editing & Content Creation</li>
-            <li>Exploring New Technologies & AI</li>
+            <li>Photography & Video Editing</li>
+            <li>Singing (Bathroom concerts included 🎤)</li>
           </ul>
         </motion.div>
-       
-       {/* Meme Section */}
-<div className="mt-10 w-full max-w-4xl text-left">
-    <h2 className="text-2xl font-semibold text-white text-center">😂 My Meme Collection</h2>
-    
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-        {/* Meme 1 */}
-        <div className="relative group">
-            <img src="m1.jpg" alt="Meme 1" className="w-full h-48 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300" />
-            <a href="m1.jpg" download className="absolute bottom-2 right-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded-md text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Download
-            </a>
-        </div>
-
-        {/* Meme 2 */}
-        <div className="relative group">
-            <img src="m2.jpeg" alt="Meme 2" className="w-full h-48 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300" />
-            <a href="m2.jpeg" download className="absolute bottom-2 right-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded-md text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Download
-            </a>
-        </div>
-    </div>
-</div>
-
-
-
       </div>
     </section>
   );

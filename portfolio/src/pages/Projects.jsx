@@ -14,6 +14,9 @@ const Projects = () => {
             key={index}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            initial={project.isLatest ? { opacity: 0, scale: 0.9 } : {}}
+            animate={project.isLatest ? { opacity: 1, scale: 1 } : {}}
+            transition={project.isLatest ? { duration: 0.6, ease: "easeOut" } : {}}
             className="bg-white/70 backdrop-blur-lg shadow-2xl rounded-2xl p-6 text-center transition transform duration-300"
           >
             <h2 className="text-2xl font-bold text-gray-800">{project.emoji} {project.title}</h2>
@@ -21,7 +24,12 @@ const Projects = () => {
             <div className="mt-4">
               <img src={project.image} alt={project.title} className="w-full rounded-lg shadow-md" />
             </div>
-            <a href={project.link} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transition">
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700 transition"
+            >
               {project.buttonText}
             </a>
           </motion.div>
@@ -34,6 +42,15 @@ const Projects = () => {
 
 // Project Data
 const projectsData = [
+  {
+    title: "MatchMarry",
+    description: "A social networking platform to find and connect with your life partner.",
+    image: "Matchmarry.png", // Replace with your actual image path
+    link: "https://matchmarry.vercel.app/", // Replace with your actual project link
+    buttonText: "Explore Now",
+    emoji: "🌐",
+    isLatest: true // Highlight animation
+  },
   {
     title: "Tic-Tac-Toe",
     description: "A classic 2-player game using JavaScript, HTML, and CSS.",

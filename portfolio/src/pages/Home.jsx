@@ -62,7 +62,7 @@ const Home = () => (
       {/* Call-to-Action Buttons */}
       <div className="mt-8 flex gap-4 flex-wrap justify-center">
         <a
-          href="Adnan_Yasir_Resume.pdf"
+          href="Resume_AdnanYasir.pdf"
           download="Adnan_Yasir_Resume.pdf"
           className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transform transition hover:scale-105"
         >
