@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 p-10">
+    <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 p-20">
       <h1 className="text-5xl font-extrabold text-gray-900 mb-10 drop-shadow-lg">🚀 My Projects</h1>
 
       {/* Project Container */}

@@ -5,16 +5,15 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import Achievements from "./pages/Achievements"; // If inside the "pages" folder
+import Achievements from "./pages/Achievements";
 import Work from "./pages/Work";
-
-
-
+import ScrollToTop from "./components/ScrollToTop";
 
 import "./index.css";
 
 const App = () => (
   <Router>
+    <ScrollToTop />
     <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
