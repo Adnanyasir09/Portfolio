@@ -28,7 +28,7 @@ const Home = () => (
       <div className="flex gap-6 mt-6 text-3xl text-gray-800">
         {[{
           icon: <FaGithub />,
-          url: "https://github.com/adnanyasir",
+          url: "https://github.com/Adnanyasir09",
           color: "hover:text-gray-900",
           key: "github",
         }, {
